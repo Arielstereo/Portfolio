@@ -2,7 +2,7 @@
   <section
     id="about"
     class="flex flex-col-reverse lg:flex-row items-center justify-content pt-72
-      md:py-20 lg:h-screen bg-slate-100 dark:bg-slate-800"
+      md:py-48 lg:h-screen bg-slate-100 dark:bg-slate-800"
   >
     <div class="card lg:ml-64 my-8 bg-gradient-to-r from-sky-400 to-pink-400 hover:from-blue-600 hover:to-pink-500 hover:text-white">
       <div class="card-info">
@@ -32,7 +32,7 @@
       </ul>
     </div>
     <div class="flex flex-col md:justify-start items-center w-2/3">
-      <h2 class="text-5xl dark:text-white">
+      <h2 class="text-4xl md:text-5xl dark:text-white">
         About me
       </h2>
       <p class="text-lg text-justify text-gray-700 dark:text-white py-16 md:px-32">

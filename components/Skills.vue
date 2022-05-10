@@ -1,6 +1,6 @@
 <template>
-  <section id="skills" class="pt-52 md:py-32 lg:h-screen flex flex-col justify-center bg-slate-50 dark:bg-slate-900 ">
-    <h2 class="text-5xl text-center dark:text-white">
+  <section id="skills" class="pt-52 md:py-48 lg:h-screen flex flex-col justify-center bg-slate-50 dark:bg-slate-900 ">
+    <h2 class="text-4xl md:text-5xl text-center dark:text-white">
       Skills
     </h2>
     <div class="flex flex-col lg:flex-row mx-auto pt-12 items-center">

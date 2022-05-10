@@ -1,9 +1,9 @@
 <template>
-  <section id="contact" class="py-52 md:h-screen flex flex-col text-center bg-slate-100 dark:bg-slate-800">
-    <h2 class="text-5xl pb-10 dark:text-white">
+  <section id="contact" class="py-52 md:py-40 md:h-screen flex flex-col text-center bg-slate-100 dark:bg-slate-800">
+    <h2 class="text-4xl md:text-5xl py-16 md:pt-20 dark:text-white">
       Contact me
     </h2>
-    <div class="card bg-black dark:bg-white">
+    <div class="card w-11/12 md:w-1/2 md:pb-16 bg-black dark:bg-white">
       <div class="tools">
         <div class="circle">
           <span class="red box" />
@@ -15,19 +15,19 @@
           <span class="green box" />
         </div>
       </div>
-      <div class="card__content py-24">
+      <div class="card__content m-auto py-20 md:py-20">
         <ul>
           <li class="text-white dark:text-black">
             <a href="mailto:arielstereo@msn.com">
-              <i class="bx bx-mail-send bx-md" />  arielstereo@msn.com</a>
+              <i class="bx bx-mail-send bx-md hidden md:inline-block" />  arielstereo@msn.com</a>
           </li>
           <li class="text-white dark:text-black">
             <a href="https://www.linkedin.com/in/ariel-mart%C3%ADnez-013507219/" target="blank">
-              <i class="bx bxl-linkedin-square bx-md" />  ArielMartinez</a>
+              <i class="bx bxl-linkedin-square bx-md hidden md:inline-block" />  ArielMartinez</a>
           </li>
           <li class="text-white dark:text-black">
             <a href="https://github.com/Arielstereo" target="blank">
-              <i class="bx bxl-github bx-md" />  Arielstereo</a>
+              <i class="bx bxl-github bx-md hidden md:inline-block" />  Arielstereo</a>
           </li>
         </ul>
       </div>
@@ -43,11 +43,9 @@ li{
   padding: 5px;
 }
 li :hover{
-  color:gray
+  color:skyblue
 }
 .card {
- width: 500px;
- height: 500px;
  margin:auto;
  border-radius: 12px;
  z-index: 1;

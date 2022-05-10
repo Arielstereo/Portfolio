@@ -7,14 +7,14 @@
       justify-content
       items-center
       py-32
-      md:py-20
+      md:py-12
       md:h-screen
       bg-slate-50
       dark:bg-slate-900
     "
   >
-    <div class="text-center pt-32 w-1/2">
-      <h1 class="text-5xl md:text-6xl dark:text-white pb-6">
+    <div class="text-center pt-32 w-full lg:w-3/4">
+      <h1 class="text-5xl lg:text-6xl dark:text-white pb-6">
         Ariel Martinez
       </h1>
       <p class="text-base md:text-lg text-gray-500 dark:text-slate-300">
@@ -41,7 +41,7 @@
         </a>
       </div>
     </div>
-    <img src="../assets/dev.svg" alt="img" class="w-2/3 py-6 md:w-1/3">
+    <img src="../assets/dev.svg" alt="img" class="w-2/3 md:w-1/2 py-12 md:mr-12 lg:mr-32">
   </header>
 </template>
 <style scoped>
