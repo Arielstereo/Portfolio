@@ -1,6 +1,6 @@
 <template>
   <div :class="isDark ? 'dark' : ''">
-    <nav id="start" class="shadow-xl py-8">
+    <nav id="start" class="shadow-xl py-8 bg-gradient-to-r from-sky-50 to-sky-100">
       <div
         class="
         container
@@ -28,16 +28,17 @@
                 text-lg
                 font-semibold
                 shadow-lg
-              text-gray-800 dark:text-white hover:text-white hover:bg-indigo-500 rounded-full
+              text-gray-800 hover:text-white hover:bg-indigo-500 rounded-full
                 "
               >
                 {{ nav.label }}
               </a>
             </li>
             <li>
-              <button class="lg:ml-12" @click="isDark = !isDark">
-                Dark mode
-              </button>
+              <label class="switch my-1.5 mx-8">
+                <input type="checkbox" @click="isDark = !isDark">
+                <span class="slider" />
+              </label>
             </li>
           </ul>
         </div>
@@ -80,45 +81,54 @@ export default {
     width: 100%;
   }
   .logo{
-    width:65px;
-    height: 60px
+    width:55px;
+    height: 50px
   }
-  button {
-  padding: 12px 25px;
-  border: unset;
-  border-radius: 25px;
-  color: #212121;
-  z-index: 1;
-  background: #e8e8e8;
+  .switch {
+  /* --moon-mask: ; */
+  font-size: 17px;
   position: relative;
-  font-weight: 600;
-  font-size: 16px;
-  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-  transition: all 250ms;
-  overflow: hidden;
-}
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+  }
+  .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  }
+  .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #faf16aa3;
+  transition: .4s;
+  border-radius: 30px;
+  }
 
-button::before {
- content: "";
- position: absolute;
- top: 0;
- left: 0;
- height: 100%;
- width: 0;
- border-radius: 15px;
- background-color: #212121;
- z-index: -1;
- -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
- box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
- transition: all 250ms
-}
+  .slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.3em;
+  bottom: 0.3em;
+  background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+  ;
+  transition: .4s;
+  }
 
-button:hover {
- color: #e8e8e8;
-}
+  input:checked + .slider {
+  background-color: #303136;
+  }
 
-button:hover::before {
- width: 100%;
-}
+  input:checked + .slider:before {
+  transform: translateX(1.5em);
+  background: #303136;
+  box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -5px 0 0 #a3dafb;
+  }
 </style>
