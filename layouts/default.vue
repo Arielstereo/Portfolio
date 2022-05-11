@@ -1,6 +1,6 @@
 <template>
   <div :class="isDark ? 'dark' : ''">
-    <nav id="start" class="shadow-xl py-8 bg-gradient-to-r from-sky-50 to-sky-100">
+    <nav id="start" class="shadow-xl py-8 bg-sky-50 dark:bg-slate-600">
       <div
         class="
         container
@@ -13,15 +13,17 @@
         <div class="w-full md:block md:w-auto">
           <button type="button" class="md:hidden absolute right-6 top-4" @click="openClose">
             <span v-if="isOpen">
-              <i class="bx bx-x bx-md" />
+              <i v-if="isDark" class="bx bx-x bx-md" style="color:#ffffff" />
+              <i v-else class="bx bx-x bx-md" />
             </span>
             <span v-else>
-              <i class="bx bx-menu-alt-left bx-md" />
+              <i v-if="isDark" class="bx bx-menu-alt-left bx-md" style="color:#ffffff" />
+              <i v-else class="bx bx-menu-alt-left bx-md" />
             </span>
           </button>
           <ul class="flex flex-col md:flex-row md:inline-flex justify-center text-center gap-4 md:gap-2" :class="[isOpen ? 'visible' : 'hidden']">
             <li>
-              <img src="./../assets/logo.png" alt="logo" class="logo lg:mr-12 hidden md:block">
+              <img src="./../assets/logo.png" alt="logo" class="logo lg:mr-12 hidden lg:block">
             </li>
             <li v-for="link of Links" :key="link.name">
               <a
@@ -36,14 +38,13 @@
                 text-lg
                 font-semibold
                 shadow-lg
-              text-gray-800 hover:text-white hover:bg-indigo-500 rounded-full
-                "
+              text-gray-800 dark:text-gray-100 focus:bg-sky-300 rounded-full"
               >
                 {{ link.name }}
               </a>
             </li>
             <li class="absolute left-6 top-5 md:relative md:top-0.5">
-              <label class="switch my-1.5 mx-8">
+              <label class="switch mx-2">
                 <input type="checkbox" @click="isDark = !isDark">
                 <span class="slider" />
               </label>
@@ -99,7 +100,6 @@ export default {
     height: 50px
   }
   .switch {
-  /* --moon-mask: ; */
   font-size: 17px;
   position: relative;
   display: inline-block;

@@ -10,10 +10,10 @@
           <img src="./../assets/foto_perfil.png" alt="avatar" class="rounded-full">
         </div>
         <div class="card-title text-center text-sky-100 text-3xl">
-          Ariel Martinez
+          {{ data.about.card.name }}
         </div>
         <div class="card-subtitle text-md text-gray-900">
-          Web Developer Jr.
+          {{ data.about.card.occupation }}
         </div>
       </div>
       <ul class="card-social">
@@ -33,10 +33,10 @@
     </div>
     <div class="flex flex-col md:justify-start items-center w-2/3">
       <h2 class="text-4xl md:text-5xl dark:text-white">
-        About me
+        {{ data.about.title }}
       </h2>
       <p class="text-lg text-justify text-gray-700 dark:text-white py-16 md:px-32">
-        Hello! I am passionate about web programming, especially the frontend. In 2021 I trained at the National Technological University (UTN), completing a diploma in full stack development, complementing self-taught with online courses (udemy). At the beginning of 2022, I did an internship at the Equo company, where we developed the new website using Vue/Nuxt, Tailwind, Node, among other technologies. My dream is to join an IT company and continue training.
+        {{ data.about.description }}
       </p>
       <a
         href="https://drive.google.com/file/d/1ZrMvaK-4RbtMOdOLiSgjOzWkf_tma3ot/view?usp=sharing"
@@ -55,11 +55,21 @@
                 bg-gradient-to-r from-sky-400 to-pink-400 hover:from-blue-600 hover:to-pink-500 hover:text-white
               "
       >
-        Download CV
+        {{ data.about.btn }}
       </a>
     </div>
   </section>
 </template>
+<script>
+import data from './../static/api/data.json'
+export default {
+  data () {
+    return {
+      data
+    }
+  }
+}
+</script>
 <style scoped>
 h2{
   font-family: 'Dela Gothic One';

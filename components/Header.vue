@@ -15,10 +15,10 @@
   >
     <div class="text-center pt-32 w-full lg:w-3/4">
       <h1 class="text-5xl lg:text-6xl dark:text-white pb-6">
-        Ariel Martinez
+        {{ data.header.name }}
       </h1>
       <p class="text-base md:text-lg text-gray-500 dark:text-slate-300">
-        Developer / Programmer / Frontend
+        {{ data.header.occupation }}
       </p>
       <div>
         <a
@@ -37,13 +37,23 @@
                 bg-gradient-to-r from-sky-400 to-pink-400 hover:from-blue-600 hover:to-pink-500 hover:text-white
               "
         >
-          Contact me
+          {{ data.header.btn }}
         </a>
       </div>
     </div>
     <img src="../assets/dev.svg" alt="img" class="w-2/3 md:w-1/2 py-12 md:mr-12 lg:mr-32">
   </header>
 </template>
+<script>
+import data from './../static/api/data.json'
+export default {
+  data () {
+    return {
+      data
+    }
+  }
+}
+</script>
 <style scoped>
 h1 {
   font-family: "Dela Gothic One";
