@@ -11,13 +11,21 @@
       "
       >
         <div class="w-full md:block md:w-auto">
-          <ul class="flex flex-wrap justify-center text-center gap-4">
+          <button type="button" class="md:hidden absolute right-6 top-4" @click="openClose">
+            <span v-if="isOpen">
+              <i class="bx bx-x bx-md" />
+            </span>
+            <span v-else>
+              <i class="bx bx-menu-alt-left bx-md" />
+            </span>
+          </button>
+          <ul class="flex flex-col md:flex-row md:inline-flex justify-center text-center gap-4 md:gap-2" :class="[isOpen ? 'visible' : 'hidden']">
             <li>
-              <img src="./../assets/logo.png" alt="logo" class="logo lg:mr-12">
+              <img src="./../assets/logo.png" alt="logo" class="logo lg:mr-12 hidden md:block">
             </li>
-            <li v-for="nav of navigation" :key="nav.label">
+            <li v-for="link of Links" :key="link.name">
               <a
-                :href="nav.route"
+                :href="link.route"
                 class="
                 label
                 inline-block
@@ -31,10 +39,10 @@
               text-gray-800 hover:text-white hover:bg-indigo-500 rounded-full
                 "
               >
-                {{ nav.label }}
+                {{ link.name }}
               </a>
             </li>
-            <li>
+            <li class="absolute left-6 top-5 md:relative md:top-0.5">
               <label class="switch my-1.5 mx-8">
                 <input type="checkbox" @click="isDark = !isDark">
                 <span class="slider" />
@@ -51,25 +59,31 @@
 export default {
   data () {
     return {
-      navigation: [
+      Links: [
         {
-          label: 'Home',
+          name: 'Home',
           route: '#home'
         },
         {
-          label: 'About',
+          name: 'About',
           route: '#about'
         },
         {
-          label: 'Skills',
+          name: 'Skills',
           route: '#skills'
         },
         {
-          label: 'Contact',
+          name: 'Contact',
           route: '#contact'
         }
       ],
-      isDark: false
+      isDark: false,
+      isOpen: false
+    }
+  },
+  methods: {
+    openClose () {
+      this.isOpen = !this.isOpen
     }
   }
 }

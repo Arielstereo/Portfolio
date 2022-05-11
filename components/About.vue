@@ -4,7 +4,7 @@
     class="flex flex-col-reverse lg:flex-row items-center justify-content pt-72
       md:py-48 lg:h-screen bg-slate-100 dark:bg-slate-800"
   >
-    <div class="card lg:ml-64 my-8 bg-gradient-to-r from-sky-400 to-pink-400 hover:from-blue-600 hover:to-pink-500 hover:text-white">
+    <div class="card hidden lg:block lg:ml-64 my-8 bg-gradient-to-r from-sky-400 to-pink-400 hover:from-blue-600 hover:to-pink-500 hover:text-white">
       <div class="card-info">
         <div class="card-avatar my-5">
           <img src="./../assets/foto_perfil.png" alt="avatar" class="rounded-full">
