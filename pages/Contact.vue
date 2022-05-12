@@ -1,10 +1,10 @@
 <template>
   <Background>
-    <section class="pt-64 md:py-40 md:h-screen flex flex-col text-center">
-      <h2 class="text-4xl md:text-5xl py-5 dark:text-white">
+    <section class="py-48 md:py-40 md:h-screen flex flex-col text-center">
+      <h2 class="text-4xl md:text-5xl py-12 dark:text-white">
         {{ data.contact.title }}
       </h2>
-      <div class="card w-11/12 md:w-1/2 md:pb-16 bg-slate-800 dark:bg-slate-200">
+      <div class="card w-11/12 md:w-1/2 lg:w-1/3 md:py-2 bg-slate-800 dark:bg-slate-200">
         <div class="tools">
           <div class="circle">
             <span class="red box" />
@@ -16,7 +16,7 @@
             <span class="green box" />
           </div>
         </div>
-        <div class="card__content m-auto py-20 md:py-20">
+        <div class="card__content m-auto py-20 md:py-5">
           <ul>
             <li class="text-white dark:text-black">
               <a href="mailto:arielstereo@msn.com">

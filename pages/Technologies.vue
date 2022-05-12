@@ -4,7 +4,7 @@
       <h2 class="text-4xl md:text-5xl text-center dark:text-white mt-36">
         Technologies
       </h2>
-      <div class="card dark:bg-white my-32 w-11/12 md:w-1/2 lg:w-1/4">
+      <div class="card dark:bg-white my-32 md:mt-8 w-11/12 md:w-1/2 lg:w-1/4">
         <h3>Git</h3>
         <h3>React</h3>
         <h3>MongoDB</h3>
