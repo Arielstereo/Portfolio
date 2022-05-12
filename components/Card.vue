@@ -1,7 +1,7 @@
 <template>
   <div class="card">
-    <div class="card2">
-      <img :src="img" alt="logo" class="p-8">
+    <div class="card2 bg-gray-800 dark:bg-sky-50 hover:bg-sky-200 dark:hover:bg-sky-200">
+      <img :src="img" alt="logo" class="p-12">
     </div>
   </div>
 </template>
@@ -28,15 +28,13 @@ export default {
 .card2 {
  width: 260px;
  height: 310px;
- background-color: #1a1a1a;
  border-radius:20px;
  transition: all .2s;
 }
 
 .card2:hover {
  transform: scale(0.98);
- border-radius: 20px;
- background-color: #ffff;
+ border-radius: 30px;
 }
 
 .card:hover {

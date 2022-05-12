@@ -1,8 +1,7 @@
 <template>
   <div>
-    <Header />
-    <About />
-    <Skills />
-    <Contact />
+    <Background>
+      <Header />
+    </Background>
   </div>
 </template>
