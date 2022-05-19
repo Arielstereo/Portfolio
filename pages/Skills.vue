@@ -1,14 +1,15 @@
 <template>
   <Background>
-    <section class="pt-52 md:py-48 lg:h-screen flex flex-col justify-center items-center">
-      <h2 class="text-4xl md:text-5xl text-center dark:text-white">
+    <section class="py-5 lg:pt-24 lg:h-screen flex flex-col justify-center items-center">
+      <Title>
         {{ data.skills.title }}
-      </h2>
-      <div class="flex flex-col lg:flex-row mx-auto pt-12 items-center">
+      </Title>
+      <div class="flex flex-col lg:flex-row mx-auto p-16 items-center">
         <Card
           v-for="item in items"
           :key="item"
           :img="item.src"
+          class="mx-2 my-2"
         />
       </div>
     </section>
@@ -22,13 +23,13 @@ export default {
       data,
       items: [
         {
-          src: require('./../assets/logo_html.png')
+          src: require('./../assets/img/logo_html.png')
         },
         {
-          src: require('./../assets/logo_vue.png')
+          src: require('./../assets/img/logo_vue.png')
         },
         {
-          src: require('./../assets/logo_node.png')
+          src: require('./../assets/img/logo_node.png')
         }
       ]
 

@@ -20,7 +20,8 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' }
+      { rel: 'stylesheet', href: 'https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' }
     ]
   },
 
@@ -51,6 +52,9 @@ export default {
         wght: [500]
       },
       'Dela+Gothic+One': {
+        wght: [400]
+      },
+      Macondo: {
         wght: [400]
       }
 
