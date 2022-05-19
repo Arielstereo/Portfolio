@@ -1,0 +1,33 @@
+{
+  "header": {
+    "name": "Ariel Martinez",
+    "occupation": " Developer / Programmer / Frontend",
+    "btn": "Contact me"
+  },
+  "about": {
+    "title": "About me",
+    "description": "Hello! I like web programming, especially the frontend. In 2021 I studied at the National Technological University (UTN), completing a diploma in full stack development, complementing self-taught with online courses (Udemy). At the beginning of 2022 I did an internship at the Equo company, where we developed the new website using Vue/Nuxt, Tailwind, Node, among other technologies. My dream is to join an IT company and continue training.",
+    "btn": "Download CV"
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "education": {
+    "title": "Education",
+    "subtitle": "National Technological University (UTN)",
+    "card": {
+      "title": "Full stack web developer",
+      "btn": "Certification"
+    }
+  },
+  "contact": {
+    "title": "Contact me",
+    "links": {
+      "email": "E-mail",
+      "linkedin": "LinkedIn",
+      "github": "Github"
+    }
+  }
+
+
+}
