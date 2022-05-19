@@ -1,6 +1,7 @@
 <template>
   <div :class="isDark ? 'dark' : ''">
     <Background>
+      <!--Navbar-->
       <nav class="lg:fixed top-0 shadow-xl w-full py-8 lg:py-6 bg-gradient-to-l lg:from-sky-400 to-transparent">
         <div
           class="
@@ -12,6 +13,7 @@
       "
         >
           <div class="w-full lg:block md:w-auto">
+            <!--Menu mobile-->
             <button type="button" class="lg:hidden absolute right-6 top-8" @click="openClose">
               <span v-if="isOpen">
                 <i v-if="isDark" class="bx bx-x bx-md dark:text-slate-50" />
@@ -47,7 +49,8 @@
                   {{ link.name }}
                 </nuxt-link>
               </li>
-              <li class="absolute left-2 top-5 lg:relative lg:top-2 lg:mx-5">
+              <li class="absolute lg:relative left-2 top-5  lg:top-2 lg:mx-5">
+                <!-- Toggle switch -->
                 <label class="switch text-sm lg:text-base m-3 lg:m-auto">
                   <input type="checkbox" @click="isDark = !isDark">
                   <span class="slider" />

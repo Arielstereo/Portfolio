@@ -1,10 +1,10 @@
 <template>
   <Background>
-    <section class="py-5 lg:pt-24 lg:h-screen flex flex-col justify-center items-center">
+    <section class="flex flex-col justify-center items-center lg:h-screen py-5 lg:pt-24">
       <Title>
         {{ data.skills.title }}
       </Title>
-      <div class="flex flex-col lg:flex-row mx-auto p-16 items-center">
+      <div class="flex flex-col lg:flex-row items-center mx-auto p-16">
         <Card
           v-for="item in items"
           :key="item"

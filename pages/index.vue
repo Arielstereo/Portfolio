@@ -1,3 +1,4 @@
+<!-- Home Page -->
 <template>
   <Background>
     <header
@@ -6,9 +7,10 @@
       md:flex-row
       justify-content
       items-center
+      md:h-screen
       py-16
       md:py-5
-      md:h-screen"
+      "
     >
       <div class="text-center w-full lg:w-3/4">
         <h1 class="text-5xl lg:text-6xl text-slate-900/90 dark:text-white/90 pb-6 animate__animated animate__backInLeft">

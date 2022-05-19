@@ -1,14 +1,14 @@
 <template>
   <Background>
-    <section class="gap-8 p-16 lg:p-32 flex flex-col justify-center items-center">
+    <section class="flex flex-col justify-center items-center gap-8 p-16 lg:p-32">
       <Title>
         {{ data.education.title }}
       </Title>
-      <h3 class="text-4xl md:text-5xl text-center dark:text-white my-3">
+      <h3 class="text-center text-4xl md:text-5xl dark:text-white my-3">
         {{ data.education.subtitle }}
       </h3>
       <img class="w-3/4 lg:w-1/4 rounded-full" src="./../assets/img/utn_logo.jpg" alt="logo_utn">
-      <div class="card p-8 w-full lg:w-1/2 h-full bg-slate-800 dark:bg-slate-100">
+      <div class="card p-8 w-full h-full lg:w-1/2 bg-slate-800 dark:bg-slate-100">
         <div class="tools">
           <div class="circle">
             <span class="red box" />
@@ -20,8 +20,8 @@
             <span class="green box" />
           </div>
         </div>
-        <div class="flex flex-col md:flex-row md:gap-5 items-center justify-center">
-          <h4 class="text-2xl text-slate-50 dark:text-gray-800 flex text-center items-center">
+        <div class="flex flex-col items-center justify-center md:flex-row md:gap-5">
+          <h4 class="flex text-center items-center text-2xl text-slate-50 dark:text-gray-800">
             {{ data.education.card.title }}
           </h4>
           <Btn secondary href="https://drive.google.com/file/d/1JzCLDMCLU5NNKONPgTcIwS248PNJYNy6/view?usp=sharing" target="_blank" class="my-5">
