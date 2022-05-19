@@ -1,8 +1,6 @@
 <template>
-  <div class="card">
-    <div class="card2 bg-gray-800 dark:bg-sky-50 hover:bg-sky-200 dark:hover:bg-sky-200">
-      <img :src="img" alt="logo" class="p-12">
-    </div>
+  <div class="card dark:bg-white">
+    <img :src="img" alt="logo" class="p-8">
   </div>
 </template>
 <script>
@@ -17,27 +15,48 @@ export default {
 </script>
 <style scoped>
 .card {
- width: 262px;
- height: 312px;
- background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
- border-radius: 20px;
- transition: all .3s;
- margin: 35px;
+  width: 250px;
+  height: 350px;
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
-.card2 {
- width: 260px;
- height: 310px;
- border-radius:20px;
- transition: all .2s;
+.card img {
+  z-index: 1;
 }
 
-.card2:hover {
- transform: scale(0.98);
- border-radius: 30px;
+.card::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
 }
 
-.card:hover {
- box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+.card::after {
+  content: '';
+  position: absolute;
+  background: #07182E;
+  inset: 5px;
+  border-radius: 15px;
+}
+.card:hover:before {
+  background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+  animation: rotBGimg 3.5s linear infinite;
 }
 </style>
