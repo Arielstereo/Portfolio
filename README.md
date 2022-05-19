@@ -2,6 +2,8 @@
 
 This portfolio is made with Nuxt, tailwind and Css for the styles. The page data is directly linked to a JSON file ( static/api/data.json ). Dynamic components. Dark mode is available. Responsive design.
 
+![MyPortfolio-img](./assets/img/Screenshot.png "My Portfolio")
+
 ## Resources: 
 
 * [Google fonts](https://fonts.google.com/) 
