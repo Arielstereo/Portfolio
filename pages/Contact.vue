@@ -1,6 +1,6 @@
 <template>
   <Background>
-    <section class="flex flex-col items-center md:justify-center h-screen pt-16 lg:pt-32">
+    <section class="flex flex-col items-center lg:justify-center lg:h-screen py-48 lg:pt-32">
       <Title>
         {{ data.contact.title }}
       </Title>
