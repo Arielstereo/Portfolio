@@ -29,7 +29,7 @@
               <h6 class="text-2xl font-semibold dark:text-slate-50">Ariel Martinez</h6>
             </span>
             <ul class="flex flex-wrap lg:inline-flex pt-8 lg:pt-0 justify-center" :class="[isOpen ? 'visible' : 'hidden']">
-              <li class="hidden lg:block mx-5">
+              <li class="hidden xl:block mx-5">
                 <Spinner />
               </li>
               <li v-for="link of Links" :key="link.name">
