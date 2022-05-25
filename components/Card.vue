@@ -15,8 +15,8 @@ export default {
 </script>
 <style scoped>
 .card {
-  width: 250px;
-  height: 350px;
+  width: 220px;
+  height: 320px;
   position: relative;
   display: flex;
   place-content: center;

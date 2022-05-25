@@ -1,10 +1,10 @@
 <template>
   <Background>
-    <section class="flex flex-col justify-center items-center lg:h-screen py-5 lg:pt-24">
+    <section class="flex flex-col justify-center items-center xl:h-screen py-5 lg:pt-32">
       <Title>
         {{ data.skills.title }}
       </Title>
-      <div class="flex flex-col lg:flex-row items-center mx-auto p-16">
+      <div class="flex flex-col lg:flex-row items-center md:justify-center mx-auto md:mx-48 p-16">
         <Card
           v-for="item in items"
           :key="item"
@@ -27,6 +27,9 @@ export default {
         },
         {
           src: require('./../assets/img/logo_vue.png')
+        },
+        {
+          src: require('./../assets/img/logo_react.png')
         },
         {
           src: require('./../assets/img/logo_node.png')
