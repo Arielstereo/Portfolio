@@ -11,7 +11,7 @@
         <p class="text-lg text-justify text-gray-700 dark:text-white py-16 md:px-32">
           {{ data.about.description }}
         </p>
-        <Btn primary href="https://drive.google.com/file/d/1ZrMvaK-4RbtMOdOLiSgjOzWkf_tma3ot/view?usp=sharing" target="_blank">
+        <Btn primary href="https://drive.google.com/file/d/1xX00pTSNiMa04mQ0WalJ0DUCLjvpBdYl/view?usp=sharing" target="_blank">
           {{ data.about.btn }}
         </Btn>
       </div>
